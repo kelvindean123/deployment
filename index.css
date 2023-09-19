@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(2, 2, 62);
+    color: #fff;
+}
+header .content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+
+}
+
+header .content .logo img{
+    width: 70px;
+    border-radius: 50%;
+
+}
+
+header .content ul{
+    display: flex;
+    align-items: center;
+}
+header .content ul li{
+    margin-left: 20px;
+    list-style: none;
+    font-size: 18px;
+}
+
+/* showcase */
+#showcase{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to left, rgba(99, 3, 3, 0.9), rgba(28, 3, 68, 0.9)), url(icon.jpg);
+    color: #fff;
+
+}
+#showcase h1{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+#showcase .container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#showcase p{
+    font-size: 20px;
+    text-align: center;
+}
+#showcase button{
+    padding: 12px 25px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(2, 2, 65);
+    border-radius: 10px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 50px;
+    text-align: center;
+}
+#services .content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px;
+}
+#services .content .tem{
+    padding: 25px;
+
+}
+#services .content .tem:hover{
+    background-color: orangered;
+    color: white;
+}
+
+
+/* contact */
+#contact{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0px;
+    background-color: aquamarine;
+}
+#contact .container{
+    width: 50%;
+}
+#contact .container form div{
+    margin: 10px;
+}
+#contact .container form input{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(188, 185, 185);
+    
+}
+#contact .container textarea{
+    width: 100%;
+}
+
+footer{
+    background-color: rgb(2, 2, 72);
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+/* media  */
+@media screen and (max-width: 650px){
+    header .content{
+        padding: 5px 20px;
+    }
+}
+@media screen and (max-width: 610px){
+    #showcase .container h1{
+        font-size: 2rem;
+        line-height: 1.5em;
+    }
+    #showcase p{
+        padding: 20px;
+    }
+    #showcase button{
+        font-size: 20px;
+
+    }
+    #contact .container{
+        width: 100%;
+    }
+}
